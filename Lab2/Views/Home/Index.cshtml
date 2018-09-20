@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "COMP2084 - Lab 2";
+}
+
+<div class="jumbotron">
+    <h1>COMP2084 - Lab 2</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Products</h2>
+      
+        <ul>
+            <li>@Html.ActionLink("Laptop", "Details","Products", new { ProductName = "Laptop" }, null)</li>
+            <li>@Html.ActionLink("Tablet", "Details", "Products", new { ProductName = "Tablet" }, null)</li>
+            <li>@Html.ActionLink("Desktop", "Details", "Products", new { ProductName = "Desktop" }, null)</li>
+        </ul>
+    </div>
+</div>
